@@ -4,13 +4,12 @@ import CheckIcon from "@mui/icons-material/Check";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import productDetail from "./products.json";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/action/action";
 import {toast ,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Products = () => {
   const dispatch = useDispatch();
-  const cardItems = useSelector((state) => state.cart.items);
   const handleAddToCart = (item) => {
     toast.success("Added in Cart", {
       position:"bottom-right" });
@@ -96,7 +95,9 @@ const Products = () => {
               return (
                 <div className="itemsImageProductPageOne" key={item.id}>
                   <div className="imgBlockitemsImagesProductPageOne">
-                    <img src={item.imageUrl} className="productImageProduct" />
+                    <img src={item.imageUrl} className="productImageProduct" alt="productimg" /> 
+                       
+          
                   </div>
                   <div className="productNameProduct">
                     <div>{item.name}</div>

@@ -10,7 +10,7 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
 
   let a=0;
-  let cost = cartItems.map((item)=>{return a = a+item.price})
+  
   useEffect(() => {
     setCartItem(cartItems);
   }, [cartItems]);
@@ -36,7 +36,7 @@ const Cart = () => {
                   <div className="cartitemsleftblockimage">
                     <img
                       className="cartitemsleftblocking"
-                      src={item.imageUrl}
+                      src={item.imageUrl} alt='leftblocking'
                     />
                   </div>
                   <div className="cartitemleftblockdetails">

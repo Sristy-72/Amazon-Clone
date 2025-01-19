@@ -19,7 +19,7 @@ const Homebanner = () => {
             item.imgs.map((it,ind)=>{
               return (
               <div className="imgBannerHomeDiv">
-              <img className="imgBannerHomeDivimg" src={it} />
+              <img className="imgBannerHomeDivimg" src={it} alt='bannerimg'/>
               <div className="imgBannerTagName">Cleaning
               Spin mops, wipes & more</div>
             </div>

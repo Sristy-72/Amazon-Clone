@@ -7,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import indianflag from "../../../Assest/indianflag.png";
 import {Link} from 'react-router-dom';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 
 const NavbarBelt = () => {
   
@@ -58,7 +58,7 @@ const NavbarBelt = () => {
       </div>
       <div className="rightnavbar">
         <div className="flaglogo">
-          <img src={indianflag} className="indianflaglogo" />
+          <img src={indianflag} className="indianflaglogo" alt="indianflag" />
           <div className="flagtext">
             EN
             <ArrowDropDownOutlinedIcon
